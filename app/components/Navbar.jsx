@@ -5,18 +5,6 @@ function Navbar() {
   return (
     <div className="bg-cyan-950">
       <div className=" flex py-2 justify-center">
-        {/* <input
-          type="search"
-          placeholder="Search"
-          className="px-2 w-48 rounded outline-none"
-        ></input>
-
-        <button
-          type="button"
-          className="inline-block rounded px-2 bg-teal-600 text text-slate-50"
-        >
-          Search
-        </button> */}
         {/* Icons */}
         <div className="flex justify-end">
           <svg
