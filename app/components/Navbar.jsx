@@ -1,9 +1,8 @@
-"use client";
 import React from "react";
 
 function Navbar() {
   return (
-    <div className="bg-cyan-950">
+    <div className="bg-cyan-950 ">
       <div className=" flex py-2 justify-center">
         {/* Icons */}
         <div className="flex justify-end">
@@ -13,7 +12,7 @@ function Navbar() {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="size-6 py-1 bg-purple-200 border-white-200 rounded-full"
+            className="size-6 py-1 bg-purple-200 border-white-200 rounded-full"
           >
             <path
               stroke-linecap="round"
@@ -28,7 +27,7 @@ function Navbar() {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="size-6 py-1 ml-2 bg-purple-200 border-white-200 rounded-full"
+            className="size-6 py-1 ml-2 bg-purple-200 border-white-200 rounded-full"
           >
             <path
               stroke-linecap="round"

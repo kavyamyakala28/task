@@ -1,20 +1,34 @@
 'use client'
 import { useRouter } from 'next/navigation'
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import SearchList from './components/SearchList';
 
 
 export default function Page() {
-  const [userName, setUserName] = useState("");
+
+  const [userId, setUserId] = useState("");
   const router = useRouter();
+
 
   async function handleUserName() {
 
-    router.push(`/api/${userName}`);
-    console.log("user name", userName)
+    router.push(`/api/${userId}`);
+
+    console.log("user name", userId)
   }
+  async function handletwo() {
+    //home page is imported
+    router.push(`/api/home`);
+    // console.log("user name", userId)
+  }
+  useEffect(() => {
+    handletwo();
+  },);
 
   function handleOnChange(e) {
-    setUserName(e.target.value);
+    setUserId(e.target.value);
+    router.push(`/api/${e.target.value}`);
+
   }
 
   return (
@@ -26,6 +40,7 @@ export default function Page() {
           onChange={handleOnChange}
           className="px-3 py-1 rounded outline-none text-zinc-600 bg-gray-300"
         ></input>
+        <SearchList />
       </div>
       <div className="h-5">
         <button
@@ -35,6 +50,7 @@ export default function Page() {
         >
           Search
         </button>
+
       </div>
       <div>
       </div>

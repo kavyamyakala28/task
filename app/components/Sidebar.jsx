@@ -2,7 +2,7 @@ import React from "react";
 
 function Sidebar() {
   return (
-    <span className="flex h-screen justify-center flex-col min-h-screen w-48  bg-teal-900 text-white">
+    <span className="sticky top-0 flex h-screen justify-center flex-col min-h-screen w-48  bg-teal-900 text-white">
       <div className="">
         <h2>Dashboard</h2>
         <div className="mb-2 ">Patients</div>
