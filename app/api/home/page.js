@@ -15,7 +15,7 @@ export default function page() {
     // const items = ["apple", "banana", "grape", "orange", "pineapple"];
     // const filteredItems = items.filter(item => item.includes(searchTerm));
 
-    async function fetchUserData(id) {
+    async function fetchUserData() {
         const response = await fetch(`https://jsonplaceholder.typicode.com/users`);
         const data = await response.json();
         setUserData(data);
@@ -79,7 +79,7 @@ export default function page() {
                     {searchTerm && (
                         <SearchList results={filteredData} />
                     )}
-                    {/* <SearchList /> */}
+                    <SearchList />
                 </div>
                 <div className="h-5">
                     <button
